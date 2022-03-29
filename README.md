@@ -28,4 +28,4 @@ Racing Game. The player controls a car with either arrow keys or WASD. W is to a
 ![End Screen](URL)
 
 ## Class Diagram
-![Diagram](URL)
+![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/RacingGame.jpg?raw=true)
