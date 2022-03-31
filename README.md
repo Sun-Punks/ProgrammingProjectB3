@@ -25,7 +25,7 @@ Racing Game. The player controls a car with either arrow keys or WASD. W is to a
 ![Gameplay](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/20220331_111816.jpg)
 
 ## GUI Mockup #3 (End Screen)
-![End Screen](URL)
+![End Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/20220331_111846.jpg)
 
 ## Class Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/RacingGameDiagram(2).jpg?raw=true)
