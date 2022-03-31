@@ -7,7 +7,7 @@ Soonhwi Kwon and Ethan Reynolds
 ![Start Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_1.png)
 
 ## GUI Mockup #2 (Gameplay)
-![Gameplay](URL)
+![Gameplay](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_3-1.png)
 
 ## GUI Mockup #3 (End Screen)
 ![End Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_2-1.png)
