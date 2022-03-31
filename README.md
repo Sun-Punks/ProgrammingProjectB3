@@ -10,7 +10,7 @@ Soonhwi Kwon and Ethan Reynolds
 ![Gameplay](URL)
 
 ## GUI Mockup #3 (End Screen)
-![End Screen](URL)
+![End Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_2-1.png)
 
 ## Class Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Whack-A-MoleDiagram.jpg?raw=true)
