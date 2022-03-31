@@ -4,7 +4,7 @@ Goup Members:
 Soonhwi Kwon and Ethan Reynolds
 
 ## GUI Mockup #1 (Start Screen)
-![Start Screen](URL)
+![Start Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_1.png)
 
 ## GUI Mockup #2 (Gameplay)
 ![Gameplay](URL)
