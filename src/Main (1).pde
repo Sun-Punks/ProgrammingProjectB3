@@ -1,11 +1,12 @@
 int score = 0;
 boolean on;
-PImage startScreen;
+PImage startScreen, endScreen;
 PFont mono;
 
 void setup() {
   size(700, 700);
   startScreen = loadImage("StartScreen.png");
+  endScreen = loadImage("gameOver.png");
   on = false;
 }
 
@@ -14,6 +15,11 @@ void draw() {
   background (0);
   if (!on) {
     startScreen();
+  }
+  if(mousePressed){
+    on = true;
+    gameOver();
+    noLoop();
   }
 }
 
@@ -32,6 +38,11 @@ void startScreen() {
 }
 
 void gameOver() {
+  image(endScreen, 0, 0, 700, 700);
+  textFont(mono);
+  fill(0);
+  textSize(30);
+  text("Score: ", 300, 125);
 }
 
 void background() {
