@@ -34,7 +34,7 @@ void startScreen() {
   textFont(mono);
   fill(0);
   text("To play, use numbers 1-9 to hit a mole \nthat pops up out of the ground. There \nwill be power-ups that pop up and help \nyou while you are playing. Try and get \nas many points as you can before the \ntime runs out. Have fun!", 230, 270);
-  text("By: Ethan Reynolds and Soonhwi Kwon", 0, 700);
+  text("By: Ethan Reynolds and Soonhwi Kwon", 5, 695);
 }
 
 void gameOver() {
@@ -43,6 +43,10 @@ void gameOver() {
   fill(0);
   textSize(30);
   text("Score: ", 300, 125);
+  textSize(14);
+  text("Whack-A-Mole", 5, 20);
+  textSize(10);
+  text("By: Ethan Reynolds and Soonhwi Kwon", 5, 695);
 }
 
 void background() {
