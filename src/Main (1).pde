@@ -1,4 +1,4 @@
-int score = 0;
+int score, time;
 boolean on;
 PImage startScreen, endScreen;
 PFont mono;
@@ -24,6 +24,14 @@ void draw() {
 }
 
 void infoPannel() {
+  if(on == true) {
+    fill(127, 127);
+    rectMode(CORNER);
+    rect(0, 0, width, 50);
+    fill(225);
+    textAlign(CENTER);
+    text("Score: " + score + "Time Left: " + time, width/2, 50);
+  }
 }
 
 void keyPressed() {
