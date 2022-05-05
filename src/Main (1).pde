@@ -2,12 +2,18 @@ int score, time;
 boolean on;
 PImage startScreen, endScreen;
 PFont mono;
+Timer moleTime;
 
 void setup() {
   size(700, 700);
   startScreen = loadImage("StartScreen.png");
   endScreen = loadImage("gameOver.png");
   on = false;
+  m1 = new Mole();
+  time = 1000;
+  moleTime = new Timer(time);
+  moleTime.start();
+  play = true;
 }
 
 void draw() {
@@ -21,6 +27,14 @@ void draw() {
     gameOver();
     noLoop();
   }
+  
+  // Display Moles
+  m1.display();
+  if (timer.isFinished()) {
+      m1.move();
+      timer.start();
+      }
+    }
 }
 
 void infoPannel() {
