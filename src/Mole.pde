@@ -1,6 +1,7 @@
 // Ethan Reynolds
 
 // Member variables
+class Mole {
   int x, y, w, h, randX, randY;
   boolean hit, play;
   PImage mole;
@@ -14,16 +15,23 @@
     hit = false;
     mole = loadImage("FakeMole.png");
     play = true;
-    i = 5;
+    //i = 5;
   }
-  
+
   void display() {
     imageMode(CENTER);
     image(mole, x, y, 90, 90);
   }
 
-  void senseHit() {
+  boolean senseHit(Hammer h) {
+    float distance = dist(x, y, h.x, h.y);
+    if (distance < w/2 + h.w) {
+      return true;
+    } else {
+      return false;
+    }
   }
+
 
   void move() {
     randX = int(random(3));
