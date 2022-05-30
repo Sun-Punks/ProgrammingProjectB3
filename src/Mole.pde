@@ -13,19 +13,19 @@ class Mole {
     w = 0;
     h = 0;
     hit = false;
-    mole = loadImage("FakeMole.png");
+    mole = loadImage("fakeMole.png");
     play = true;
     //i = 5;
   }
 
   void display() {
     imageMode(CENTER);
-    image(mole, x, y, 90, 90);
+    image(mole, x, y, 95, 95);
   }
 
   boolean senseHit(Hammer h) {
     float distance = dist(x, y, h.x, h.y);
-    if (distance < w/2 + h.w) {
+    if (distance < 1) {
       return true;
     } else {
       return false;
