@@ -36,6 +36,7 @@ void draw() {
     infoPannel();
     time--;
 
+
     // Display Moles
     h1.display();
     m1.display();
@@ -44,28 +45,28 @@ void draw() {
       timer.start();
     }
     if (m1.senseHit(h1)) {
-        score+=20;
-        m1.x = -50;
-        m1.y = -50;
-      }
-      
-      if (moleTime.isFinished()){
-        gameOver();
-      }
+      score+=20;
+      m1.x = -50;
+      m1.y = -50;
+    }
+
+    if (moleTime.isFinished()) {
+      gameOver();
+    }
   }
 }
 
 void infoPannel() {
   //if (on == true) {
-    fill(127, 127);
-    rectMode(CORNER);
-    rect(0, 0, width, 50);
-    fill(225);
-    textAlign(CENTER);
-    color(255);
-    textSize(15);
-    //while(on){
-    text("Score: " + score + "    Time Left: " + time, width/2, 25);
+  fill(127, 127);
+  rectMode(CORNER);
+  rect(0, 0, width, 50);
+  fill(225);
+  textAlign(CENTER);
+  color(255);
+  textSize(15);
+  //while(on){
+  text("Score: " + score + "    Time Left: " + time, width/2, 25);
   //}
 }
 
