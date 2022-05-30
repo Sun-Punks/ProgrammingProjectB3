@@ -19,7 +19,7 @@ class Hammer {
   // Member Methods
   void display() {
     imageMode(CENTER);
-    image(hammer, x, y, 75, 75);
+    image(hammer, x, y, 80, 80);
     move();
   }
 
