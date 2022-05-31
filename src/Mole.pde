@@ -13,19 +13,19 @@ class Mole {
     w = 0;
     h = 0;
     hit = false;
-    mole = loadImage("fakeMole.png");
+    mole = loadImage("mole.png");
     play = true;
     //i = 5;
   }
 
   void display() {
     imageMode(CENTER);
-    image(mole, x, y, 95, 95);
+    image(mole, x, y, 90, 90);
   }
 
   boolean senseHit(Hammer h) {
     float distance = dist(x, y, h.x, h.y);
-    if (distance < 1) {
+    if (distance < 100) {
       return true;
     } else {
       return false;
@@ -38,19 +38,19 @@ class Mole {
     randY = int(random(3));
 
     if (randX == 0) {
-      x = 150;
+      x = 130;
     } else if (randX == 1) {
-      x = 350;
+      x = 330;
     } else {
-      x = 550;
+      x = 530;
     }
 
     if (randY == 0) {
-      y = 550;
+      y = 500;
     } else if (randX == 1) {
-      y = 350;
+      y = 310;
     } else {
-      y = 150;
+      y = 100;
     }
   }
 
