@@ -1,21 +1,24 @@
-int score, time1, time2, time, min;
+// Ethan Reynolds
+
+int score, time1, time2, time, min, time3;
 boolean on;
-PImage startScreen, endScreen;
+PImage startScreen, endScreen, background;
 PFont mono;
-Timer moleTime, timer;
-boolean play;
+Timer moleTime, timer, hitTimer;
+boolean play, hitTime;
 Mole m1;
 Hammer h1;
-
 
 void setup() {
   size(700, 700);
   startScreen = loadImage("StartScreen.png");
   endScreen = loadImage("gameOver.png");
+  background = loadImage("background.png");
   on = false;
   m1 = new Mole();
   time1 = 1000;
   time2 = 180000;
+  time3 = 20;
   moleTime = new Timer(time2);
   moleTime.start();
   play = true;
@@ -24,18 +27,25 @@ void setup() {
   score = 0;
   //min = (time2/1000);
   time = time2;
+  hitTime = false;
   h1 = new Hammer();
+  hitTimer = new Timer(time3);
 }
 
 void draw() {
+  if(frameCount % 1000 == 10){
+    timer.setTotalTime();
+    
+  }
+  println(timer.totalTime);
   mono = createFont("Font.ttf", 12);
   background (0);
   if (!on) {
     startScreen();
   } else {
+    background();
     infoPannel();
     time--;
-
 
     // Display Moles
     h1.display();
@@ -46,12 +56,20 @@ void draw() {
     }
     if (m1.senseHit(h1)) {
       score+=20;
-      m1.x = -50;
-      m1.y = -50;
+      hitTime = true;
+      //h1.x = -50;
+      //h1.y = -50;
+      m1.x = -500;
+      m1.y = -500;
     }
 
     if (moleTime.isFinished()) {
       gameOver();
+    }
+
+    if (hitTime = true) {
+      h1.hit();
+      hitTimer.start();
     }
   }
 }
@@ -86,11 +104,11 @@ void startScreen() {
 
 void gameOver() {
   imageMode(CENTER);
-  image(endScreen, width/2, height/2, 700, 700);
+  image(endScreen, width/2, height/2, 750, 700);
   textFont(mono);
   fill(0);
   textSize(30);
-  text("Score: ", 300, 125);
+  text("Score: " + score, 300, 125);
   textSize(14);
   text("Whack-A-Mole", 5, 20);
   textSize(10);
@@ -98,4 +116,5 @@ void gameOver() {
 }
 
 void background() {
+  image(background, 350, 350, 700, 700);
 }
