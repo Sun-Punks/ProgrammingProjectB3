@@ -17,5 +17,7 @@ Soonhwi Kwon (Graphics)
 ## Class Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Whack-A-MoleDiagram.jpg?raw=true)
 
+## Logic Flow Diagram
+![Diagram]()
 
 Credit also given to Ethan Reynolds from 2021 for coding.
