@@ -17,17 +17,4 @@ Soonhwi Kwon (Graphics) and Ethan Reynolds (Coding)
 ## Class Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Whack-A-MoleDiagram.jpg?raw=true)
 
-# Programming Project Proposal 2
-Racing Game. The player controls a car with either arrow keys or WASD. W is to accelerate forward and S is to accelerate backwards. A and D is for steering. A is for left, D is for right. After the player knows the controls, it will be racing against random bots. These bots are coded to go as fast as possible to make the game hard. The player can reach a maximum of 74-75 mph. After that, they can't accelerate any faster. The racer has to stay on the track, if they hit any obstacle or go off the track, they will stop abruptly, or slow down immensly. After that, the player has cars passing them and the placement they are in will go down. The placement will be shown on the top left corner, and the health bar for the car will show at the bottom The car has a certain amount of health because if it hits an object, it crashes, and if it's health goes down to 0, 
 
-## GUI Mockup #1 (Start Screen)
-![Start Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/20220331_111801.jpg)
-
-## GUI Mockup #2 (Gameplay)
-![Gameplay](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/20220331_111816.jpg)
-
-## GUI Mockup #3 (End Screen)
-![End Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/20220331_111846.jpg)
-
-## Class Diagram
-![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/RacingGameDiagram(2).jpg?raw=true)
