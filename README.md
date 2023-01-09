@@ -18,6 +18,6 @@ Soonhwi Kwon (Graphics)
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Whack-A-MoleDiagram.jpg?raw=true)
 
 ## Logic Flow Diagram
-![Diagram]()
+![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Untitled%20Diagram%20(1).jpg)
 
 Credit also given to Ethan Reynolds from 2021 for coding.
