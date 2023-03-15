@@ -1,4 +1,4 @@
-//Ethan Reynolds
+//Ethan Reynolds & Soonhwi Kwon
 
 class Hammer {
   // Member Variables
