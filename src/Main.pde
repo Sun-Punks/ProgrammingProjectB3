@@ -1,4 +1,4 @@
-// Ethan Reynolds
+// Ethan Reynolds & Soonhwi Kwon
 
 int score, time1, time2, time, min, time3;
 boolean on;
