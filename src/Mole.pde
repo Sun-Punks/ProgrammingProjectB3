@@ -1,4 +1,4 @@
-// Ethan Reynolds
+// Ethan Reynolds & Soonhwi Kwon
 
 // Member variables
 class Mole {
@@ -13,7 +13,7 @@ class Mole {
     w = 0;
     h = 0;
     hit = false;
-    mole = loadImage("mole.png");
+    mole = loadImage("Mole.png");
     play = true;
     //i = 5;
   }
