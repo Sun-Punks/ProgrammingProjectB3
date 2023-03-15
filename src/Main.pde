@@ -1,4 +1,4 @@
-// Ethan Reynolds & Soonhwi Kwon
+// Ethan Reynolds
 
 int score, time1, time2, time, min, time3;
 boolean on;
@@ -8,6 +8,7 @@ Timer moleTime, timer, hitTimer;
 boolean play, hitTime;
 Mole m1;
 Hammer h1;
+PowerUps p1;
 
 void setup() {
   size(700, 700);
@@ -18,6 +19,7 @@ void setup() {
   //g = 0;
   //rand = 0;
   m1 = new Mole();
+  p1 = new PowerUps();
   time1 = 1000;
   time2 = 180000;
   time3 = 20;
@@ -62,8 +64,10 @@ void draw() {
     // Display Moles
     h1.display();
     m1.display();
+    p1.display();
     if (timer.isFinished()) {
       m1.move();
+      p1.move();
       timer.start();
     }
     if (m1.senseHit(h1)) {
@@ -73,6 +77,14 @@ void draw() {
       //h1.y = -50;
       m1.x = -500;
       m1.y = -500;
+    }
+        if (p1.senseHit(h1)) {
+      score+=20;
+      hitTime = true;
+      //h1.x = -50;
+      //h1.y = -50;
+      p1.x = -500;
+      p1.y = -500;
     }
     //if (moleTime.isFinished()){
     //  g = 1;
