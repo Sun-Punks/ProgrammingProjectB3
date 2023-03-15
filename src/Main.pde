@@ -15,6 +15,8 @@ void setup() {
   endScreen = loadImage("gameOver.png");
   background = loadImage("background.png");
   on = false;
+  //g = 0;
+  //rand = 0;
   m1 = new Mole();
   time1 = 1000;
   time2 = 180000;
@@ -34,12 +36,22 @@ void setup() {
 
 void draw() {
   if(frameCount % 1000 == 10){
-    timer.setTotalTime();
+    //timer.setTotalTime();
     
   }
   println(timer.totalTime);
   mono = createFont("Font.ttf", 12);
   background (0);
+  //switch(screen){
+  //  case 0:
+  //    startScreen();
+  //    break;
+  //  case 1:
+  //    background();
+  //    infoPannel();
+  //    time--;
+  //    break;
+  //}
   if (!on) {
     startScreen();
   } else {
@@ -62,13 +74,17 @@ void draw() {
       m1.x = -500;
       m1.y = -500;
     }
-
+    //if (moleTime.isFinished()){
+    //  g = 1;
+    //  rand = 1;
+    //}
+    //  rand (g == 2) ? gameOver() : 1;
     if (moleTime.isFinished()) {
       gameOver();
     }
 
     if (hitTime = true) {
-      h1.hit();
+      //h1.hit();
       hitTimer.start();
     }
   }
@@ -95,7 +111,7 @@ void startScreen() {
   image(startScreen, 0, 0, 700, 700);
   textFont(mono);
   fill(0);
-  text("To play, use numbers 1-9 to hit a mole \nthat pops up out of the ground. There \nwill be power-ups that pop up and help \nyou while you are playing. Try and get \nas many points as you can in three \nminites. Have fun!", 230, 270);
+  text("To play, use numbers 1-9 to hit a mole \nthat pops up out of the ground. There \nwill be power-ups that pop up and help \nyou while you are playing. Try and get \nas many points as you can in three \nminutes. Have fun!", 230, 270);
   text("By: Ethan Reynolds and Soonhwi Kwon", 5, 695);
   if (mousePressed || keyPressed) {
     on = true;
