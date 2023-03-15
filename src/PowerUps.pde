@@ -1,10 +1,11 @@
-class PowerUps{
+//class PowerUps extends Timer{
+  class PowerUps{
   // Member variables
   int x, y, w, h;
   boolean hit;
 
   // Constructor
-  PowerUps() {
+  public PowerUps() {
     x = 0;
     y = 0;
     w = 0;
@@ -13,7 +14,11 @@ class PowerUps{
   }
 
 // Power ups
-  void frenzy() {}
+  void frenzy() {
+    if(hit == true){
+      
+    }
+  }
 
   void timerFreeze() {}
 
