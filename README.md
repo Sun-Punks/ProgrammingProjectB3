@@ -3,24 +3,27 @@ Whack-a-mole. The player has the number keys 1-9 that will trigger the hammer to
 Goup Members:
 Soonhwi Kwon (Graphics) 
 
-## GUI screenshot (Start Screen)
+### GUI screenshot (Start Screen)
 ![Start Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_1.png)
 
 
-## GUI Mockup (Gameplay)
+### GUI Mockup (Gameplay)
 ![Gameplay](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_3-1.png)
 
-## GUI screenshot (End Screen)
+### GUI screenshot (End Screen)
 ![End Screen](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/pixil-frame-0_2-1.png)
 
 
-## Class Diagram
+### Class Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Whack-A-MoleDiagram.jpg?raw=true)
 
-## Logic Flow Diagram
+### Logic Flow Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Untitled%20Diagram%20(2).jpg)
 
-## Source Code for each
+## Game Zip!!!
+* [Go to Zip]()
+
+### Source Code for each
 * [Hammer](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/src/Hammer.pde)
 * [Main](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/src/Main.pde)
 * [PowerUps](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/src/PowerUps.pde)
