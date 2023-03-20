@@ -20,6 +20,9 @@ Soonhwi Kwon
 ### Logic Flow Diagram
 ![Diagram](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/images/Untitled%20Diagram%20(2).jpg)
 
+### Runnable Entry Point
+![Screenshot]()
+
 ## Game Zip!!!
 * [Go to Zip](https://github.com/Sun-Punks/ProgrammingProjectB3/blob/main/Main%202.zip)
 
