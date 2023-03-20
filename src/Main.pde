@@ -13,7 +13,7 @@ PowerUps p1;
 void setup() {
   size(700, 700);
   startScreen = loadImage("StartScreen.png");
-  endScreen = loadImage("gameOver.png");
+  endScreen = loadImage("GameOver.png");
   background = loadImage("background.png");
   on = false;
   //g = 0;
